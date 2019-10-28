@@ -1,12 +1,10 @@
 class Solution:
     def toLowerCase(self, s: str) -> str:
-        retStr = ''
+        strList = list(s)
         for i in range(0,len(s)) :
-            if ord(s[i]) >= 65 and ord(s[i]) <= 90 :
-                retStr += chr(ord(s[i]) + 32)
-            else :
-                retStr += s[i]
-        return retStr
+            if ord(strList[i]) >= 65 and ord(strList[i]) <= 90 :
+                strList[i] = chr(ord(s[i]) + 32)
+        return "".join(strList)
 
 if __name__ == "__main__":
     solution = Solution()
