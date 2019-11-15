@@ -15,7 +15,6 @@ class TreeNode:
 class Solution:
     
     def searchBST(self, root: TreeNode, val: int) -> TreeNode:
-        print("root.val[{}] : {}".format(root.val, val))
         if root.val == val :
             return root
         if root.left != None :
